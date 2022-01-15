@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+:root {
+    --opacity-black: rgb(0, 0, 0, 0.6);
+    --pop: hsl(0, 77%, 64%);
+}
+
+body {
+    background-image: linear-gradient(#38469F, #68C4C6);
+    height: 300vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background-color: var(--opacity-black);
+    color: white;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    background-color: var(--opacity-black);
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 0 0 1em 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--pop);
+}
+
+.logo {
+    margin: 1em 0;
+    font-size: 1.3rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+.nav-toggle:checked ~ nav {
+    display: block;
+}
+
+
+
