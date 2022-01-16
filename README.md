@@ -17,5 +17,6 @@ I got inspiration from a YouTube video to create a navbar that looks good on all
 The website is not live for now. Download the files and open locally. 
 
 ## Acknowledgements
+Kevin Powell - Create a responsive navigation nav with no JS!
 [![Kevin Powell - Create a responsive navigation nav with no JS!](http://img.youtube.com/vi/8QKOaTYvYUA/0.jpg)](http://www.youtube.com/watch?v=8QKOaTYvYUA)
 
