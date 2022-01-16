@@ -121,26 +121,20 @@ footer {
     margin-top: auto;
     color: white;
     background-color: var(--opacity-black);
-    font-size: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    padding: 0 1em;
 }
 
-.fa-btns {
+.fa-stack i {
+    color: var(--pop);
+}
+
+.fa-stack {
     display: flex;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.fa-btns a i {
-    color: var(--pop);
-    font-size: 3rem;
-}
-
-footer a p {
-    display: none;
+    justify-content: right;
 }
 
 
